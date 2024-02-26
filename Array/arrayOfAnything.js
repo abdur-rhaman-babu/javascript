@@ -15,24 +15,42 @@
 // stName.sort()
 // // console.log(stName)
 
-// const students = [
-//     { name: 'John', roll: 110 },
-//     { name: 'Alice', roll: 108 },
-//     { name: 'Bob', roll: 103 },
-//     { name: 'Eva', roll: 106 },
-//     { name: 'Charlie', roll: 107 },
-//     { name: 'David', roll: 101 },
-//     { name: 'Emma', roll: 102 },
-//     { name: 'Frank', roll: 109 },
-//     { name: 'Grace', roll: 104 },
-//     { name: 'Henry', roll: 105 }
-//   ];
+const students = [
+    { name: 'John', roll: 110 },
+    { name: 'Alice', roll: 108 },
+    { name: 'Bob', roll: 103 },
+    { name: 'Eva', roll: 106 },
+    { name: 'Charlie', roll: 107 },
+    { name: 'David', roll: 101 },
+    { name: 'Emma', roll: 102 },
+    { name: 'Frank', roll: 109 },
+    { name: 'Grace', roll: 104 },
+    { name: 'Henry', roll: 105 }
+  ];
 
-//   students.sort((a,b)=>{
-//     return a.roll - b.roll
-//   })
-//   console.log(students)
 
+  // sorted with year
+  students.sort((a,b)=>{
+    return a.roll - b.roll
+  })
+  // console.log(students)
+
+  // sorted with name
+
+  students.sort((a,b)=>{
+    const x = a.name.toLowerCase()
+    const y = b.name.toLowerCase()
+
+    if(x < y){
+      return -1
+    }else if(x > y){
+      return 1
+    }else{
+      return 0
+    }
+  })
+
+  console.log(students)
 // finde leap year--------------------->>>>>>>>>>>
 
 // const getLeapYear = (year)=>{

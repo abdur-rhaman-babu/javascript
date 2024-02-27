@@ -4,4 +4,6 @@ const inchToFeet = (inch)=>{
 }
 
 const result = inchToFeet(132)
-console.log(result)
+// console.log(result)
+
+

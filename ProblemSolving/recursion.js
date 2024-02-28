@@ -37,4 +37,4 @@ const fibo = (i) =>{
     }
     return fibo( i - 1) + fibo( i - 2)
 }
-console.log(fibo(6))
+// console.log(fibo(6))

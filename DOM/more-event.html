@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="para">This is Bangladesh</h1>
+    <input id="delete-input" type="text">
+    <button id="delete-btn" disabled >Delete</button>
+    <script>
+        const h1 = document.getElementById('para')
+        const deleteBtn = document.getElementById('delete-btn')
+        const deleteInput = document.getElementById('delete-input')
+
+        deleteBtn.addEventListener('click', ()=>{
+            h1.style.display = 'none'
+        })
+
+        deleteInput.addEventListener('keyup', (e)=>{
+            if( e.target.value === 'delete'){
+                deleteBtn.removeAttribute('disabled')
+            }
+            else{
+                deleteBtn.setAttribute('disabled', TextTrackCueList)
+            }
+        })
+
+        deleteInput.addEventListener('focus', ()=>{
+            document.body.style.background = 'red'
+        })
+
+        deleteInput.addEventListener('blur', ()=>{
+            document.body.style.background = 'none'
+        })
+
+        deleteInput.addEventListener('scroll', ()=>{
+            document.body.style.background = 'green'
+        })
+
+    </script>
+</body>
+</html>

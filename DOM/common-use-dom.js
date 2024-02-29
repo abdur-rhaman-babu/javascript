@@ -15,3 +15,4 @@ update.addEventListener('click', ()=>{
     para.innerText = updateInput.value;
     updateInput.value = '';
 })
+
